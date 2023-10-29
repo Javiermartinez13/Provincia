@@ -19,6 +19,6 @@ public class Municipio {
         return totalHabitantes;
     }
     public String toString(){
-        return "Municipio [localidades=]" + localidades + "]";
+        return ("Municipio [localidades=]" + localidades + "]") ;
     }
 }

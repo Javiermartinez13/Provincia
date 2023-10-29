@@ -22,7 +22,7 @@ public class Principal {
 
         Localidad localidad2 = new Localidad();
         
-        localidad2.setNombre(" Malaga ");
+        localidad2.setNombre(" Málaga ");
 
         localidad2.setNumeroHabitantes(333333);
 

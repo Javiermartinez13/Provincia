@@ -20,7 +20,7 @@ public class Provincia {
     }
 
     public String toString(){
-    return "Provincia [municipios =]" + municipios + "]";
+    return ("Provincia [municipios =]" + municipios + "]") ;
     }
 
 
