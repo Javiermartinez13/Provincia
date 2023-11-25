@@ -1,9 +1,10 @@
 package dominio;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Provincia {
+public class Provincia implements Serializable {
     private String nombre;
     private List<Municipio> municipios = new ArrayList<>();
 
@@ -38,11 +39,5 @@ public class Provincia {
         return municipios;
     }
 
-    public Municipio getMunicipio(int index) {
-        if (index >= 0 && index < municipios.size()) {
-            return municipios.get(index);
-        } else {
-            return null; // Manejar el caso en el que el índice es inválido
-        }
-    }
+   
 }

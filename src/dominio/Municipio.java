@@ -1,9 +1,10 @@
 package dominio;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Municipio {
+public class Municipio implements Serializable {
     private List<Localidad> localidades = new ArrayList<>();
 
     public void agregarLocalidad(Localidad localidad) {
@@ -27,13 +28,7 @@ public class Municipio {
         return localidades;
     }
 
-    public Localidad getLocalidad(int index) {
-        if (index >= 0 && index < localidades.size()) {
-            return localidades.get(index);
-        } else {
-            return null; // Manejar el caso en el que el índice es inválido
-        }
-    }
+    
 
     public int getNombre() {
         return 0;
